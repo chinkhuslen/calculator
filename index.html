@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script
+      src="https://kit.fontawesome.com/07be24ad80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper center">
+      <div class="container">
+        <div class="display-wrapper center">
+          <div id="display">0</div>
+        </div>
+        <div class="controller">
+          <div class="flexrow sizeofcon">
+            <button id="clear-all">AC</button>
+            <button>+/-</button>
+            <button id="perc">%</button>
+            <button id="divide" onclick="myCalc(this)">/</button>
+          </div>
+          <div class="flexrow sizeofcon">
+            <button onclick="myCalc(this)">7</button>
+            <button onclick="myCalc(this)">8</button>
+            <button onclick="myCalc(this)">9</button>
+            <button id="multiply" onclick="myCalc(this)">x</button>
+          </div>
+          <div class="flexrow sizeofcon">
+            <button onclick="myCalc(this)">4</button>
+            <button onclick="myCalc(this)">5</button>
+            <button onclick="myCalc(this)">6</button>
+            <button id="sub" onclick="myCalc(this)">-</button>
+          </div>
+          <div class="flexrow sizeofcon">
+            <button onclick="myCalc(this)">1</button>
+            <button onclick="myCalc(this)">2</button>
+            <button onclick="myCalc(this)">3</button>
+            <button id="add" onclick="myCalc(this)">+</button>
+          </div>
+          <div class="flexrow sizeofcon">
+            <button class="big-b border-r" onclick="myCalc(this)">0</button>
+            <button onclick="myCalc(this)">.</button>
+            <button id="equal" class="border-l" onclick="myCalc(this)">
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
